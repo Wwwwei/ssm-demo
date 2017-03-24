@@ -12,7 +12,7 @@
     <context:component-scan base-package="com.demo"/>
     <!-- 第一种方式：加载一个properties文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="location" value="classpath:config/jdbc.properties"/>
+        <property name="location" value="classpath:jdbc.properties"/>
     </bean>
     <!-- 第二种方式：加载多个properties文件
     <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
@@ -50,7 +50,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <!-- 自动扫描mapping.xml文件 -->
-        <property name="mapperLocations" value="classpath:mappers/*.xml"></property>
+        <property name="mapperLocations" value="classpath:mappers/UserDao.xml"></property>
     </bean>
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
