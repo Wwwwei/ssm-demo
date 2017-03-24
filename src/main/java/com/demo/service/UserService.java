@@ -1,7 +1,19 @@
 package com.demo.service;
 
+import com.demo.dao.entity.UserEntity;
+
 /**
- * Created by wwwwei on 17/3/18.
+ * 用户服务类
+ *
+ * @author Wwwwei
  */
 public interface UserService {
+
+    Integer createUser(UserEntity userEntity);
+
+    Integer updateUser(UserEntity userEntity);
+
+    Integer deleteUser(Integer id);
+
+    UserEntity getUserById(Integer id);
 }
