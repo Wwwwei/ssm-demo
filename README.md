@@ -1,5 +1,5 @@
 # ssm-demo 使用Maven搭建SSM框架项目demo
-This is a demo for how to start a ssm java web project with maven. 
+This is a demo for how to start a **SSM JAVA WEB PROJECT** with **MAVEN**. 
 - The code will show the simple architecture of ssm framework, such as dao, service, controller.
 - The code will show the simple CRUD examples.
 
